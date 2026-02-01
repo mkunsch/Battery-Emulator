@@ -138,7 +138,10 @@ SensorConfig batterySensorConfigTemplate[] = {
 SensorConfig globalSensorConfigTemplate[] = {{"bms_status", "BMS Status", "", "", "", always},
                                              {"pause_status", "Pause Status", "", "", "", always},
                                              {"event_level", "Event Level", "", "", "", always},
-                                             {"emulator_status", "Emulator Status", "", "", "", always}};
+                                             {"emulator_status", "Emulator Status", "", "", "", always},
+                                             // MK260120 uptime & cpu temp to globalsensorconfigs
+                                             {"emulator_uptime", "Emulator Uptime Seconds", "", "s", "duration", always},
+                                             {"cpu_temperature", "CPU Temperature", "", "°C", "temperature", always}};
 
 static std::list<SensorConfig> sensorConfigs;
 
